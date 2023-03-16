@@ -7,41 +7,72 @@
     <meta name="keyword" content="photo">
     <meta name="description" content="We sell photo, buy it!">
     <!-- Q:meta用途? SEO優化。name跟content就是字面意思，寫給瀏覽器看的。viewport是視窗。 -->
-    <title>JY's Photo Shop</title>
+    <title>JY's Photo Shop html lesson</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
     <div id="top"></div>
+    <div id="header">
+        <img src="img/photo_banner.jpg" width="100%" alt="cute dog">
+        <h1>Welcome to Photo Shop!</h1>
+        <p>We sell the best photo in the universe.</p>
+    </div>
+
+    <hr>
     
-    <img src="img/photo_banner.jpg" width="100%" alt="cute dog">
-    <h1>Welcome to Photo Shop!</h1>
-    <p>We sell the best photo in the universe.</p>
+    <div id="navigation">
+        <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <!-- <li><a onclick="alert('Hello, welcom to my website!')" href="contact.html">Contact Us</a></li> -->
+            <li><a href="prices/new-photo-prices.html">Price List</a></li>
+            <li><a href="https://unsplash.com/s/photos/dog" target="_blank" >Where our photos from</a></li>
+            <li><a href="downloads/all-prices.pdf">Download All Prices List</a></li>
+        </ul>
+    </div>
 
-    <a href="contact.html">Contact Us</a>
-    <a href="prices/new-photo-prices.html">Price List</a>
-    <a href="https://unsplash.com/s/photos/dog">Where our photos from</a>
-    <a href="downloads/all-prices.pdf">Download All Prices List</a>
-    <h2>About Us</h2>
-    <p>Operate by one person, don't urge.</p>
+    <hr>
 
-    <h2>Types of Photo We Sell</h2>
-    <h3>Dogs</h3>
-    <p>They looks cute.</p>
-    <h3>Cats</h3>
-    <p>They say nope.</p>
-    <h3>Foods</h3>
-    <p>Tastes good.</p>
+    <div id="about-us">
+        <h2>About Us</h2>
+        <p>Operate by one person, don't urge.<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+    </div>
 
-    <h2>Contact Us</h2>
-    <h3>Email</h3>
-    <p>test@gmail</p>
-    <h3>Phone</h3>
-    <p>0800-092-000</p>
-    <h3>Instagram</h3>
-    <p>@jys_photoshop</p>
+    <div id="types-of-photo">
+        <h2>Types of Photo We Sell</h2>
+        <h3>Dogs</h3>
+        <p>They looks cute.一種常見的犬科哺乳動物，與狼為同一種動物，生物學分類上是狼的一個亞種。<br>
+            狗是人類最早馴養的一個物種。</p>
 
+        <h3>Cats</h3>
+        <p>They say nope.</p>
+
+        <h3>Foods</h3>
+        <p>Tastes good.</p>
+    </div>
+
+    <div id="contact-us">
+        <h2>Contact Us</h2>
+        <p>You can contact us in various ways:</p>
+        <div class="contact-method">
+            <h3>Email</h3>
+            <p>test@gmail</p>
+        </div>
+        <div class="contact-method">
+            <h3>Phone</h3>
+            <p>0800-092-000</p>
+        </div>
+        <div class="contact-method">
+            <h3>Instagram</h3>
+            <p>@jys_photoshop</p>
+        </div>
+    </div>
+    
     <a href="#top">To top</a>
+
+    <script src="scripts/main.js"></script>
     
 </body>
 </html>
